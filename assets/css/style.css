@@ -32,3 +32,7 @@ body, html {
     border: 1px solid black;
     margin-right: 20px;
 }
+
+.white_bg {
+    background-color: white;
+}
