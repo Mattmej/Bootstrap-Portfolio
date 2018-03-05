@@ -36,3 +36,8 @@ body, html {
 .white_bg {
     background-color: white;
 }
+
+.social-link {
+    height: 50px;
+    width: 50px;
+}
