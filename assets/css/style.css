@@ -7,11 +7,12 @@ body, html {
     background-image: url("../images/circles-light.png");
 
     /* Makes the image the page's full height */
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
 
     /* Centers and scales the image properly */
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 }
 
