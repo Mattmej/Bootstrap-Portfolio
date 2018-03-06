@@ -16,18 +16,6 @@
 
     ==================================================
 
-    New Goal: Make page more responsive as screen size changes (use .col-*size*-*1-5*)
-
-    1. Text body becomes vertical as screen gets smaller.                                           (*)
-    2. Social medial links relocate to the bottom of the screen as it gets smaller.                 (*)
-    3. "Connect with me" header also goes to bottom of screen as it gets smaller [nested?]
-        a. Go to sidebar header "connect with me"                                                   (*)
-        b. Cut that section                                                                         (*)
-        c. Go to sidebar content section                                                            (*)
-        d. Paste in the header so that the header is the main section
-            and the links are nested inside
-    4. Header navbar links go to bottom of name as screen gets smaller.                             (X)
-
 
 
 -->
@@ -76,21 +64,17 @@
 
     <!-- The Body Content -->
     <div class="container clearfix" style = "overflow-x: hidden">   
+        <!--===================================-->
         <!-- Floating image was messing up container shape. Clearfix fixed this issue. -->
         <!-- The "style" property prevents a horizontal scrollbar from appearing for computer monitors. -->
+        <!--===================================-->
+
 
         <!-- Row 1: space -->
         <section class="row space"></section>
 
-        <!-- Row 2: Sidebar Heading -->
-        <section class="row">
-            <section class="col-8"></section>
-            <!-- Spacing for left side of page -->
 
-
-        </section>
-
-        <!-- Row 3: "About Me" heading and sidebar heading -->
+        <!-- Row 2: "About Me" heading -->
         <section class="row">
 
             <!-- "About Me" heading -->
@@ -103,7 +87,7 @@
 
 
 
-        <!-- Row 4: Picture, "About Me" content, and sidebar content. -->
+        <!-- Row 3: Picture, "About Me" content, and sidebar content. -->
         <section class="row px-3">
             <section class="col-md-7 white_bg" style="padding-top: 20px; color: #777777">
 
@@ -137,32 +121,22 @@
                 </p>
             </section>
 
-
-            <!-- Sidebar Content -->
-            <section class="col-md-1 space"></section>
             <!-- Horizontal spacing -->
+            <section class="col-md-1 space"></section>  
+            
 
-            <!-- <section class="col-md-3 white_bg h-25 pt-2" style="margin-top: -13px"> -->
-                <!-- Content column -->
+            <!-- Sidebar Content (flex) -->
 
-
-                <!-- <div class="row navbar-toggleable-md justify-content-around"> -->
-                    <!-- Content container inside the column-->
-
-
-
-
-            <!-- Sidebar heading -->
             <section class="col-md-3 sidebar white_bg d-flex flex-column">
+
+                <!-- Sidebar heading -->
                 <div class = "row" style = "border-bottom: 1px solid #777777">
-
                     <h5 class = "text-info mx-auto">Connect with Me</h5>
-
-
                 </div>
 
-
+                <!-- Social Media Links -->
                 <div class = "row pt-2 d-flex flex-row justify-content-around">
+
                     <!-- GitHub link -->
                     <figure class="nav-item">
                         <a href="https://github.com/Mattmej">
@@ -186,12 +160,8 @@
                     
                 </div>
 
-
-
-
-
-
             </section>
+            
         </section>
 
 
@@ -215,11 +185,11 @@
         <section class="row space"></section>
         <section class="row space"></section>
         <!-- <section class = "row">
-            <div class = "col-md-12"></div>
+            <div class = "col-md-12 space"></div>
         </section>
 
         <section class = "row">
-            <div class = "col-md-12"></div>
+            <div class = "col-md-12 space"></div>
         </section>
 
         <section class = "row">
