@@ -2,15 +2,21 @@
 <html lang="en">
 
 <!-- 
-    I need to edit the "About Me" header and its content.
+    To Do:
+    1. Add personal picture (*)
+        a. Resize personal picture (*)
+    2. Change Footer color (*)
+    3. Make footer "sticky" (*)
+    4. Add pictures for social media links (*)
+        a. Make the sidebar smaller (*)
+        b. Center the pictures (*)
+    5. Add links (*)
+    6. Make page pretty (*)
+    7. Add links to "portfolio" and "contact"
 
-    1. Change "About Me" to "Portfolio" (*)
-    2. Remove "About Me" text. (*)
-    3. Create 2 columns in "Portfolio" section to hold projects. (*)
-    4. For each column, make 6 slots.
-        a. 3 slots for project titles
-        b. 3 slots for project pictures
-    5. Add links to "about" and "contact"
+    ==================================================
+
+
 
 -->
 
@@ -41,13 +47,13 @@
         </div>
 
         <ul class="navbar-nav">
-            <li class="nav-item mr-5">
+            <li class="nav-item mr-5" style = "color: #777777; font-size: 20px">
                 About
             </li>
-            <li class="nav-item mr-5">
+            <li class="nav-item mr-5" style = "color: #777777; font-size: 20px">
                 Portfolio
             </li>
-            <li class="nav-item mr-5">
+            <li class="nav-item mr-5" style = "color: #777777; font-size: 20px">
                 Contact
             </li>
         </ul>
@@ -57,82 +63,79 @@
 
 
     <!-- The Body Content -->
-    <div class="container">
+    <div class="container clearfix" style = "overflow-x: hidden">   
+        <!--===================================-->
+        <!-- Floating image was messing up container shape. Clearfix fixed this issue. -->
+        <!-- The "style" property prevents a horizontal scrollbar from appearing for computer monitors. -->
+        <!--===================================-->
+
 
         <!-- Row 1: space -->
         <section class="row space"></section>
 
-        <!-- Row 2: Sidebar Heading -->
-        <section class="row">
-            <section class="col-8"></section>
-            <!-- Spacing for left side of page -->
 
+        <!-- Row 2: "About Me" heading -->
+        <section class="row">
+
+            <!-- "About Me" heading -->
+            <section class="col-md-7 pt-1 white_bg" style="border-bottom: 1px solid #777777">
+                <h3 class = "text-info">About Me</h3>
+            </section>
+
+            <!-- Spacing -->
+            <section class="col-md-1"></section>
 
         </section>
 
-        <!-- Row 3: "Portfolio" heading and sidebar heading -->
-        <section class="row">
 
-            <!-- "Portfolio" heading -->
-            <section class="col-7 pt-1 white_bg" style="border-bottom: 1px solid #777777">
-                <h3 class = "text-info">Portfolio</h3>
+        <!-- Row 3: Picture, "About Me" content, and sidebar content. -->
+        <section class="row px-auto">
+            <section class="col-md-7 white_bg" style="padding-top: 20px; color: #777777">
+
+                <!-- Photo -->
+                <img src="assets/images/me.jpg" class="img-fluid mr-4 float-left" alt="me" style="max-width: 35%">
+
+
+                <!-- "About Me" content -->
+                <p>
+                    Hi. I'm Matt Mejia, and I combine a methodical approach to problems with a compassionate approach to people. I have a Bachelor
+                    of Arts in physics, which I have put to use by helping students through substitute teaching and tutoring.
+                    I serve as a substitute teacher at Flintridge Preparatory School in La Canada, and I tutor students in
+                    the San Gabriel Valley area.
+                </p>
+                <p>
+                    As a substitute teacher I specialize in math and physics. My greatest achievement is teaching an AP Calculus class for a
+                    month while the class' instructor attended an important math conference. Keeping track of the instructor's
+                    notes, teaching the lesson effectively, and adapting to the students' questions were challenging, but
+                    these challenges were rewarding for me when the students smiled and told me "thank you."
+                </p>
+                <p>
+                    I tutor students in math, physics, and test preparation. The best part of personal tutoring is seeing my students' faces
+                    light up with comprehension and their parents' faces light up with pride. Students vouch for my ability
+                    to make hard subjects easier, and several thankful parents tell me that I have helped raise their children's
+                    SAT scores by as much as 100 points. I hope that by helping my students with difficult topics I can help
+                    them with fostering a growth mindset and building self-confidence.
+                </p>
+                <p>
+                    I look forward to helping you with your needs, whether they be related to programming or teaching. Thank you for visiting
+                    my page!
+                </p>
             </section>
 
-            <!-- Spacing -->
-            <section class="col-1"></section>
-
-            <!-- Sidebar heading -->
-            <section class="col-3 sidebar mt-1 white_bg">
-                <h5 class = "text-info">Connect with Me</h5>
-            </section>
-        </section>
-
-        <!-- Row 4: Picture, "Portfolio" content, and sidebar content. -->
-        <section class="row">   <!-- 7 columns long -->
-
-            <!-- Spacing -->
-            <section class="col-1 white_bg pb-3" style="padding-top: 20px"></section>
-
-            <!-- Holds content -->
-            <section class = "col-2 white_bg pb-3" style = "padding-top: 20px">
-                <div class = "text-holder mt-3">text</div>
-                <!-- <div class = "pic-holder my-3"></div> -->
-                <div class = "float-left">
-                    <!-- <img src = "assets/images/image_1.jpg" class = "img-thumbnail" alt = "project 1"> -->
-                    <img src = "assets/images/image_1.jpg" class = "img-fluid">
-                </div>
-                <div class = "text-holder mt-3">text</div>
-                <div class = "pic-holder my-3"></div>
-                <div class = "text-holder mt-3">text</div>
-                <div class = "pic-holder my-3"></div>
-
-
-            </section>
-
-            <!-- Spacing -->
-            <section class="col-1 white_bg pb-3" style="padding-top: 20px"></section>
-
-            <!-- Holds content -->
-            <section class = "col-2 white_bg pb-3" style = "padding-top: 20px">
-                <div class = "text-holder mt-3"></div>
-                <div class = "pic-holder my-3"></div>
-                <div class = "text-holder mt-3"></div>
-                <div class = "pic-holder my-3"></div>
-                <div class = "text-holder mt-3"></div>
-                <div class = "pic-holder my-3"></div>
-            </section>
-
-             <!-- Spacing -->
-            <section class="col-1 white_bg" style="padding-top: 20px"></section>
-
-            <!-- Sidebar Content -->
-            <section class="col-1"></section>
             <!-- Horizontal spacing -->
+            <section class="col-md-1 space"></section>  
+            
 
-            <section class="col-3 white_bg h-25 pt-2" style="margin-top: -13px">
-                <!-- Content column -->
-                <div class="row navbar-toggleable-md justify-content-around">
-                    <!-- Content container inside the column-->
+            <!-- Sidebar Content (flex) -->
+            <section class="col-md-3 sidebar white_bg d-flex flex-column">
+
+                <!-- Sidebar heading -->
+                <div class = "row" style = "border-bottom: 1px solid #777777">
+                    <h5 class = "text-info mx-auto">Connect with Me</h5>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class = "row pt-2 d-flex flex-row justify-content-around">
 
                     <!-- GitHub link -->
                     <figure class="nav-item">
@@ -154,17 +157,30 @@
                             <img src="assets/images/stackoverflow_icon.png" class="social-link" alt="Stack Overflow">
                         </a>
                     </figure>
-
+                    
                 </div>
+
             </section>
+            
         </section>
+
 
 
         <!-- Spacing at the bottom of the body. -->
         <section class="row space"></section>
         <section class="row space"></section>
         <section class="row space"></section>
+        <!-- <section class = "row">
+            <div class = "col-md-12 space"></div>
+        </section>
 
+        <section class = "row">
+            <div class = "col-md-12 space"></div>
+        </section>
+
+        <section class = "row">
+            <div class = "col-md-12"></div>
+        </section> -->
 
     </div>
 
