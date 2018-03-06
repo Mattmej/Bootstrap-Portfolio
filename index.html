@@ -20,8 +20,13 @@
 
     1. Text body becomes vertical as screen gets smaller.                                           (*)
     2. Social medial links relocate to the bottom of the screen as it gets smaller.                 (*)
-    3. "Connect with me" header also goes to bottom of screen as it gets smaller.
-    4. Header navbar links go to bottom of name as screen gets smaller.
+    3. "Connect with me" header also goes to bottom of screen as it gets smaller [nested?]
+        a. Go to sidebar header "connect with me"                                                   (*)
+        b. Cut that section                                                                         (*)
+        c. Go to sidebar content section                                                            (*)
+        d. Paste in the header so that the header is the main section
+            and the links are nested inside
+    4. Header navbar links go to bottom of name as screen gets smaller.                             (X)
 
 
 
@@ -70,7 +75,7 @@
 
 
     <!-- The Body Content -->
-    <div class="container">
+    <div class="container clearfix">    <!-- Floating image was messing up container shape. Clearfix fixed this issue. -->
 
         <!-- Row 1: space -->
         <section class="row space"></section>
@@ -94,14 +99,10 @@
             <!-- Spacing -->
             <section class="col-md-1"></section>
 
-            <!-- Sidebar heading -->
-            <section class="col-md-3 sidebar mt-1 white_bg">
-                <h5 class = "text-info">Connect with Me</h5>
-            </section>
-        </section>
+
 
         <!-- Row 4: Picture, "About Me" content, and sidebar content. -->
-        <section class="row">
+        <section class="row px-3">
             <section class="col-md-7 white_bg" style="padding-top: 20px; color: #777777">
 
                 <!-- Photo -->
@@ -139,11 +140,20 @@
             <section class="col-md-1"></section>
             <!-- Horizontal spacing -->
 
-            <section class="col-md-3 white_bg h-25 pt-2" style="margin-top: -13px">
+            <!-- <section class="col-md-3 white_bg h-25 pt-2" style="margin-top: -13px"> -->
                 <!-- Content column -->
-                <div class="row navbar-toggleable-md justify-content-around">
+
+
+                <!-- <div class="row navbar-toggleable-md justify-content-around"> -->
                     <!-- Content container inside the column-->
 
+
+
+
+            <!-- Sidebar heading -->
+            <section class="col-md-3 sidebar mt-1 white_bg">
+                <h5 class = "text-info">Connect with Me</h5>
+                <div class = "row">
                     <!-- GitHub link -->
                     <figure class="nav-item">
                         <a href="https://github.com/Mattmej">
@@ -164,6 +174,27 @@
                             <img src="assets/images/stackoverflow_icon.png" class="social-link" alt="Stack Overflow">
                         </a>
                     </figure>
+                    
+                </div>
+
+
+
+
+
+
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+
+
+                    
 
                 </div>
             </section>
