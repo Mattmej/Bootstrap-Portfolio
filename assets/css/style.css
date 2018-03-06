@@ -2,6 +2,9 @@ body, html {
     height: 100%;
 }
 
+body {overflow-x: hidden;}
+
+
 .bg {
     /* Image used */
     background-image: url("../images/circles-light.png");
@@ -17,9 +20,9 @@ body, html {
 }
 
 .sidebar {
-    height: 30px;
-    width: 100px;
-    border-bottom: 1px solid #777777;
+    height: 100px;
+    /* width: 100px; */
+    /* border-bottom: 1px solid #777777; */
 }
 
 .space {

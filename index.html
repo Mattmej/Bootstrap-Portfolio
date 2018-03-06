@@ -75,7 +75,9 @@
 
 
     <!-- The Body Content -->
-    <div class="container clearfix">    <!-- Floating image was messing up container shape. Clearfix fixed this issue. -->
+    <div class="container clearfix" style = "overflow-x: hidden">   
+        <!-- Floating image was messing up container shape. Clearfix fixed this issue. -->
+        <!-- The "style" property prevents a horizontal scrollbar from appearing for computer monitors. -->
 
         <!-- Row 1: space -->
         <section class="row space"></section>
@@ -151,9 +153,16 @@
 
 
             <!-- Sidebar heading -->
-            <section class="col-md-3 sidebar white_bg">
-                <h5 class = "text-info">Connect with Me</h5>
-                <div class = "row">
+            <section class="col-md-3 sidebar white_bg d-flex flex-column">
+                <div class = "row" style = "border-bottom: 1px solid #777777">
+
+                    <h5 class = "text-info mx-auto">Connect with Me</h5>
+
+
+                </div>
+
+
+                <div class = "row pt-2 d-flex flex-row justify-content-around">
                     <!-- GitHub link -->
                     <figure class="nav-item">
                         <a href="https://github.com/Mattmej">
